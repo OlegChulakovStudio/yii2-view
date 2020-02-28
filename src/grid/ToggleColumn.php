@@ -62,11 +62,11 @@ class ToggleColumn extends DataColumn
      *
      * @param Model $model
      * @param string $attribute
-     * @param string $route
+     * @param string|array $route
      * @return string
      * @throws \Exception
      */
-    public static function render(Model $model, string $attribute, string $route): string
+    public static function render(Model $model, string $attribute, $route): string
     {
         return ToggleInputWidget::widget([
             'model' => $model,
